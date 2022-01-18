@@ -13,10 +13,8 @@
         <action
             android:id="@+id/action_startFragment_to_registrationFragment"
             app:destination="@id/registrationFragment" />
-        <action
-            android:id="@+id/action_startFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.moviejash.fragments_authentication.RegistrationFragment"
