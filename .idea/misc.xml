@@ -13,6 +13,11 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/MovieJash/app/src/main/res/layout/fragment_registration.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MovieJash/app/src/main/res/layout/fragment_start.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MovieJash/app/src/main/res/layout/fragment_tickets.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/drawable/ic_baseline_theaters_24.xml" value="0.1125" />
+        <entry key="app/src/main/res/layout/fragment_creditcard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/bottom_naviagtion_menu.xml" value="0.19322916666666667" />
       </map>
     </option>
   </component>
