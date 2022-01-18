@@ -1,9 +1,10 @@
-package com.example.moviejash.fragments
+package com.example.moviejash.fragments_authentication
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.moviejash.R
 
 class StartFragment: Fragment (R.layout.fragment_start) {
@@ -15,7 +16,12 @@ class StartFragment: Fragment (R.layout.fragment_start) {
 
         startButton = view.findViewById(R.id.startButton)
 
+        val controller = Navigation.findNavController(view)
+
         startButton.setOnClickListener {
+
+            val action = StartFragmentDirections.actionStartFragmentToRegistrationFragment()
+            val action1 = StartFragmentDirections.actionStartFragmentToLoginFragment()
 
         }
     }

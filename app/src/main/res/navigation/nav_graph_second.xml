@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_second"
+    app:startDestination="@id/moviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.moviejash.fragments_nav_bar.MoviesFragment"
+        tools:layout="@layout/fragment_movies"
+        android:label="MoviesFragment" >
+        <action
+            android:id="@+id/action_moviesFragment2_to_ticketsFragment2"
+            app:destination="@id/ticketsFragment" />
+        <action
+            android:id="@+id/action_moviesFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.example.moviejash.fragments_nav_bar.TicketsFragment"
+        tools:layout="@layout/fragment_tickets"
+        android:label="TicketsFragment" >
+        <action
+            android:id="@+id/action_ticketsFragment2_to_moviesFragment2"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_ticketsFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.moviejash.fragments_nav_bar.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment2_to_moviesFragment2"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_ticketsFragment2"
+            app:destination="@id/ticketsFragment" />
+    </fragment>
+</navigation>
