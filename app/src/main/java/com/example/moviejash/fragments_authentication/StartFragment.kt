@@ -21,7 +21,8 @@ class StartFragment: Fragment (R.layout.fragment_start) {
         startButton.setOnClickListener {
 
             val action = StartFragmentDirections.actionStartFragmentToRegistrationFragment()
-            val action1 = StartFragmentDirections.actionStartFragmentToLoginFragment()
+
+            controller.navigate(action)
 
         }
     }
