@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/moviesFragment"
+        android:icon="@drawable/ic_baseline_theaters_24"
+        android:title="Movies"/>
+
+    <item
+        android:id="@+id/ticketsFragment"
+        android:icon="@drawable/ticket"
+        android:title="Tickets"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profile"/>
+
+</menu>
