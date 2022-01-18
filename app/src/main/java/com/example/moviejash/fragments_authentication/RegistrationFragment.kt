@@ -1,4 +1,4 @@
-package com.example.moviejash.fragments
+package com.example.moviejash.fragments_authentication
 
 import android.os.Bundle
 import android.view.View
