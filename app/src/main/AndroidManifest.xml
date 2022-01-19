@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieJash">
         <activity
+            android:name=".BackToLoginFragment"
+            android:exported="true" />
+        <activity
             android:name=".PasswordReset"
             android:exported="true" />
         <activity
