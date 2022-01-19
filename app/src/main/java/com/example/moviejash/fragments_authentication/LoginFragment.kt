@@ -8,8 +8,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.moviejash.PasswordReset
 import com.example.moviejash.R
-import com.example.moviejash.ResetPassword
 import com.example.moviejash.bottom_nav_second
 import com.google.firebase.auth.FirebaseAuth
 
@@ -46,7 +46,7 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
         }
 
         ForgetPassword.setOnClickListener() {
-            startActivity(Intent(requireActivity(), ResetPassword::class.java))
+            startActivity(Intent(requireActivity(), PasswordReset::class.java))
             requireActivity().finish()
 
         }

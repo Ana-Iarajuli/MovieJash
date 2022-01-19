@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieJash">
         <activity
+            android:name=".PasswordReset"
+            android:exported="true" />
+        <activity
             android:name=".bottom_nav_second"
             android:exported="false" />
         <activity
             android:name=".ResetPassword"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity_CreditCard"
             android:exported="false" />
