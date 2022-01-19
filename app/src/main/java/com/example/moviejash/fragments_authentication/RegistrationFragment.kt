@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.moviejash.R
+import com.example.moviejash.bottom_nav_second
 import com.example.moviejash.fragments_nav_bar.MoviesFragment
 import com.google.firebase.auth.FirebaseAuth
 
@@ -29,6 +30,13 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
         init()
 
         val controller = Navigation.findNavController(view)
+
+        LoginButton.setOnClickListener() {
+
+            val action = RegistrationFragmentDirections.actionRegistrationFragmentToLoginFragment()
+            controller.navigate(action)
+
+        }
 
         RegistrationButton.setOnClickListener() {
 
@@ -55,8 +63,9 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
             }
             else FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
-                    if (task.isSuccessful)
-                        Toast.makeText(activity)
+                    if (task.isSuccessful) {
+                        registerListener()
+                    }
 
                 }
 
@@ -76,12 +85,11 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
     }
 
-    private fun registerListeners() {
+    private fun registerListener() {
         RegistrationButton.setOnClickListener() {
-            startActivity(Intent(this, ))
+            startActivity(Intent(requireActivity(), bottom_nav_second::class.java))
+            requireActivity().finish()
         }
-
-
 
     }
 
