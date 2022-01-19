@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254151382206",
+    "project_id": "moviejash",
+    "storage_bucket": "moviejash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254151382206:android:78407fbf4fedac83fa3aef",
+        "android_client_info": {
+          "package_name": "com.example.moviejash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254151382206-je2741tt3ul4bkmr4goh2887is80l5lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsgDb4jj4rDrlERFeh7Nvy-1w2HX_YFCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254151382206-je2741tt3ul4bkmr4goh2887is80l5lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
