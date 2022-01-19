@@ -5,9 +5,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.moviejash.R
+import com.example.moviejash.ResetPassword
 import com.example.moviejash.bottom_nav_second
 import com.google.firebase.auth.FirebaseAuth
 
@@ -16,11 +18,13 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
     private lateinit var Email2: EditText
     private lateinit var Password2: EditText
     private lateinit var LogInButton2: Button
+    private lateinit var ForgetPassword: TextView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         init()
+
 
         LogInButton2.setOnClickListener() {
             val email2 = Email2.text.toString()
@@ -30,14 +34,20 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
                 Toast.makeText(requireActivity(), "Please Enter Email And Password", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            else {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(email2, password2)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            goToBottomNavActivity()
 
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(email2, password2)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        goToBottomNavActivity()
-
+                        }
                     }
             }
+        }
+
+        ForgetPassword.setOnClickListener() {
+            startActivity(Intent(requireActivity(), ResetPassword::class.java))
+            requireActivity().finish()
 
         }
 
@@ -47,6 +57,8 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
         Email2 = requireActivity().findViewById(R.id.Email2)
         Password2 = requireActivity().findViewById(R.id.Password2)
         LogInButton2 = requireView().findViewById(R.id.logInButton2)
+        ForgetPassword = requireView().findViewById(R.id.forgetPassword)
+
     }
 
     private fun goToBottomNavActivity() {

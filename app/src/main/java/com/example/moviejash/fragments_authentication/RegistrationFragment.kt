@@ -5,20 +5,19 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.moviejash.R
 import com.example.moviejash.bottom_nav_second
-import com.example.moviejash.fragments_nav_bar.MoviesFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
     private lateinit var RegistrationButton: Button
-    private lateinit var LoginButton: Button
-    private lateinit var Name: EditText
-    private lateinit var Surname: EditText
+    private lateinit var LoginButton: TextView
+    private lateinit var Username: EditText
     private lateinit var Email: EditText
     private lateinit var Password: EditText
     private lateinit var RepeatPassword: EditText
@@ -40,34 +39,35 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
         RegistrationButton.setOnClickListener() {
 
-            var name = Name.text.toString()
-            var surname = Surname.text.toString()
+            var username = Username.text.toString()
             var email = Email.text.toString()
             var password = Password.text.toString()
             var repeat_password = RepeatPassword.text.toString()
 
-            if (name.isEmpty() || name.length < 3) {
-                Name.error = "Enter Your Name"
-            }
-            else if (surname.isEmpty() || surname.length < 3) {
-                Surname.error = "Enter Your Surname"
+            if (username.isEmpty() || username.length < 3) {
+                Username.error = "Enter Your Name"
             }
             else if (email.isEmpty() || !email.contains("@")){
                 Email.error = "Enter A Valid Email"
             }
             else if (password.isEmpty() || password.length < 8) {
-                Password.error = "Password Must Contain At Least 8 characters!"
+                Password.error = "Password Must Contain At Least 8 Characters!"
             }
-            else if ("!@#$%^&*()_+=" !in password) {
-                Password.error = "Password Must Contain At Least One Special Symbol!"
+            else if (repeat_password != password) {
+                RepeatPassword.error = "Password Mismatch!"
             }
-            else FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        registerListener()
-                    }
+            else {
+                FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            registerListener()
+                        }
+                        else {
+                            Toast.makeText(requireActivity(), "Error", Toast.LENGTH_SHORT).show()
+                        }
 
-                }
+                    }
+            }
 
         }
 
@@ -77,8 +77,7 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
         RegistrationButton = requireView().findViewById(R.id.RegistrationButton)
         LoginButton = requireView().findViewById(R.id.LoginButton)
-        Name = requireView().findViewById(R.id.Name)
-        Surname = requireView().findViewById(R.id.Surname)
+        Username = requireView().findViewById(R.id.Username)
         Email = requireView().findViewById(R.id.Email)
         Password = requireView().findViewById(R.id.Password)
         RepeatPassword = requireView().findViewById(R.id.RepeatPassword)

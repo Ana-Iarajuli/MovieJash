@@ -2,6 +2,7 @@ package com.example.moviejash
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -12,6 +13,9 @@ class bottom_nav_second : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_nav_second)
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.hide()
 
         val navView = findViewById<BottomNavigationView>(R.id.BottomNavigationView)
 
