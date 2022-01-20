@@ -15,6 +15,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:text="Buy Ticket"
+        android:fontFamily="@font/carter_one"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -240,9 +242,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:text="Available"
+        android:fontFamily="@font/cardo_bold"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/button23"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
@@ -251,8 +255,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:text="Selected"
+        android:fontFamily="@font/cardo_bold"
+        android:textSize="18sp"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/button24"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -270,35 +276,40 @@
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Dune"
+            android:fontFamily="@font/cardo_bold"
             android:textColor="@color/white"/>
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="House Of Gucci"
+            android:fontFamily="@font/cardo_bold"
             android:textColor="@color/white"/>
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="No Time To Die"
+            android:fontFamily="@font/cardo_bold"
             android:textColor="@color/white"/>
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Spider-Man: No Way Home"
+            android:fontFamily="@font/cardo_bold"
             android:textColor="@color/white"/>
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="The King's Man"
+            android:fontFamily="@font/cardo_bold"
             android:textColor="@color/white"/>
     </RadioGroup>
 
@@ -309,8 +320,10 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="177dp"
-        android:text="TextView"
-        android:textColor="@color/white"
+        android:text="Select Seats"
+        android:fontFamily="@font/carter_one"
+        android:textColor="#E8B621"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -341,8 +354,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
-        android:text="TextView"
-        android:textColor="@color/white"
+        android:text="Seats:"
+        android:textSize="18sp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="#f9d423"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -352,9 +367,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gentium_book_basic_italic"
+        android:text="20"
         android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -365,8 +383,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textColor="@color/white"
+        android:text="Price:"
+        android:textSize="18sp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="#f9d423"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -376,9 +396,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:text="0$"
+        android:fontFamily="@font/gentium_book_basic_italic"
         android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
