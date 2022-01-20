@@ -23,6 +23,8 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         init()
 
 
@@ -65,6 +67,7 @@ class LoginFragment: Fragment (R.layout.fragment_login) {
         startActivity(Intent(requireActivity(), bottom_nav_second::class.java))
         requireActivity().finish()
     }
+
 
 
 }
