@@ -40,7 +40,7 @@ class MainActivity_CreditCard : AppCompatActivity() {
             var year = Year.text.toString()
             var cvv = Cvv.text.toString()
 
-            if (cardnumber.isEmpty() || cardnumber.length != 16 || cardnumber.matches(".*[0-9].*".toRegex())) {
+            if (cardnumber.isEmpty() || cardnumber.length != 16 || !cardnumber.matches(".*[0-9].*".toRegex())) {
                 CardNumber.error = "Enter Valid Card Number"
             }
             else if (month.isEmpty() || !(month.toInt() <= 12 && month.toInt() == 0)) {
