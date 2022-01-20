@@ -10,8 +10,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.moviejash.R
+import com.example.moviejash.UserInfo
 import com.example.moviejash.bottom_nav_second
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
@@ -22,11 +24,18 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
     private lateinit var Password: EditText
     private lateinit var RepeatPassword: EditText
 
+    private val auth = FirebaseAuth.getInstance()
+    private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         init()
+
+
+
 
         val controller = Navigation.findNavController(view)
 
@@ -86,10 +95,15 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
     private fun registerListener() {
         RegistrationButton.setOnClickListener() {
+            val saveusername = Username.text.toString()
+            val savemail = Email.text.toString()
+            val userInfo = UserInfo(saveusername, savemail)
+            db.child(auth.currentUser?.uid!!).setValue(userInfo)
             startActivity(Intent(requireActivity(), bottom_nav_second::class.java))
             requireActivity().finish()
         }
 
     }
+
 
 }

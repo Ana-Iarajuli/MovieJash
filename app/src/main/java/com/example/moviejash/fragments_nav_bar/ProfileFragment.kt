@@ -6,16 +6,23 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.moviejash.MainActivity
 import com.example.moviejash.PasswordReset
 import com.example.moviejash.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class ProfileFragment: Fragment (R.layout.fragment_profile){
     private lateinit var ResPasswordButton: Button
     private lateinit var LogoutButton: Button
     private lateinit var UserPhoto: ImageView
     private lateinit var Camera: Button
+    private lateinit var savedusername: TextView
+    private lateinit var savedemail: TextView
+    private val auth = FirebaseAuth.getInstance()
+    private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
 
     companion object{
         val IMAGE_REQUEST_CODE = 100
@@ -29,6 +36,9 @@ class ProfileFragment: Fragment (R.layout.fragment_profile){
         LogoutButton = requireActivity().findViewById(R.id.LogoutButton)
         Camera = requireActivity().findViewById(R.id.Camera)
         UserPhoto = requireActivity().findViewById(R.id.UserPhoto)
+        savedusername = requireActivity().findViewById(R.id.savedmail)
+
+
 
 
         ResPasswordButton.setOnClickListener() {
@@ -59,5 +69,7 @@ class ProfileFragment: Fragment (R.layout.fragment_profile){
             UserPhoto.setImageURI(data?.data)
         }
     }
+
+
 
 }
