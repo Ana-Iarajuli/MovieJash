@@ -28,14 +28,10 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
     private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
 
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         init()
-
-
-
 
         val controller = Navigation.findNavController(view)
 
@@ -77,7 +73,6 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
                     }
             }
-
         }
 
     }
@@ -95,15 +90,16 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
     private fun registerListener() {
         RegistrationButton.setOnClickListener() {
+
             val saveusername = Username.text.toString()
             val savemail = Email.text.toString()
             val userInfo = UserInfo(saveusername, savemail)
             db.child(auth.currentUser?.uid!!).setValue(userInfo)
+
             startActivity(Intent(requireActivity(), bottom_nav_second::class.java))
             requireActivity().finish()
         }
 
     }
-
 
 }
