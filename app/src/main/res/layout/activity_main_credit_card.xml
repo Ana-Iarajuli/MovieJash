@@ -45,7 +45,8 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="XXXX XXXX XXXX XXXX"
-        android:textColorHint="@color/white"
+        android:textColorHint="#50FFFFFF"
+        android:textColor="@color/white"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -62,19 +63,6 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
-
-    <EditText
-        android:id="@+id/expirationDate"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="00 / 00"
-        android:textColorHint="@color/white"
-        android:inputType="date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView14"
@@ -93,17 +81,16 @@
     <EditText
         android:id="@+id/cvv"
         android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:gravity="center"
         android:hint=" - - - "
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:inputType="numberPassword"
+        android:textColorHint="#50FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/expirationDate"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <CheckBox
@@ -112,17 +99,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginTop="24dp"
-        android:text="Save Card"
-        android:textStyle="bold"
-        android:fontFamily="@font/gentium_book_basic_italic"
         android:buttonTint="#ff4e50"
+        android:fontFamily="@font/gentium_book_basic_italic"
+        android:text="Save Card"
+        android:textColor="#D6C52D"
         android:textSize="25sp"
-        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expirationDate" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SecondBuyTicket"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -157,6 +144,49 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tbcbank" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="00"
+        android:inputType="date"
+        android:textColorHint="#50FFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="/"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate1"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/editTextDate1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="00"
+        android:gravity="end"
+        android:inputType="date"
+        android:textColorHint="#50FFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
