@@ -3,6 +3,7 @@ package com.example.moviejash.fragments_authentication
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.moviejash.R
@@ -10,9 +11,12 @@ import com.example.moviejash.R
 class StartFragment: Fragment (R.layout.fragment_start) {
 
     private lateinit var startButton: Button
+    private lateinit var UserPhoto: ImageView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         startButton = view.findViewById(R.id.startButton)
 
