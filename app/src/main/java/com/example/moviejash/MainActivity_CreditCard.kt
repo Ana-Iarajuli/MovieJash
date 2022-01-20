@@ -28,7 +28,7 @@ class MainActivity_CreditCard : AppCompatActivity() {
 
         init()
 
-        SecondBuyTicket.setOnClickListener() {
+        SecondBuyTicket.setOnClickListener {
 
 //            დიალოგის მერე უნდა დაიწყოს ეს ექთივითი
 
@@ -52,7 +52,8 @@ class MainActivity_CreditCard : AppCompatActivity() {
             else if (cvv.isEmpty() || cvv.length != 3) {
                 Cvv.error = "CVV Must Contain 3 numbers"
             }
-            else AlertDialog.Builder(this).setTitle("Confirm Purchase")
+            else {
+                AlertDialog.Builder(this).setTitle("Confirm Purchase")
                 .setMessage("Are You Sure You Want To Buy this Ticket?")
                 .setPositiveButton("Yes") { dialog, i ->
 
@@ -68,7 +69,8 @@ class MainActivity_CreditCard : AppCompatActivity() {
 
                     dialog.dismiss()
                     goToMovies()
-                }
+                }.show()
+            }
 
         }
     }
