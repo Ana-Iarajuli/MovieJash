@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="106dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="107dp"
         android:fontFamily="@font/carter_one"
         android:gravity="center"
@@ -93,37 +93,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="24dp"
-        android:buttonTint="#ff4e50"
-        android:fontFamily="@font/gentium_book_basic_italic"
-        android:text="Save Card"
-        android:textColor="#D6C52D"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
     <Button
         android:id="@+id/SecondBuyTicket"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_button"
         android:text="Buy Ticket"
-        android:textStyle="bold"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:background="@drawable/custom_button"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -146,7 +130,7 @@
         app:srcCompat="@drawable/tbcbank" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/month"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="52dp"
@@ -170,12 +154,12 @@
         android:text="/"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextDate1"
-        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintEnd_toStartOf="@+id/year"
+        app:layout_constraintStart_toEndOf="@+id/month"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/editTextDate1"
+        android:id="@+id/year"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
