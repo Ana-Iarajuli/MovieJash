@@ -73,7 +73,6 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
                     }
             }
-
         }
 
     }
