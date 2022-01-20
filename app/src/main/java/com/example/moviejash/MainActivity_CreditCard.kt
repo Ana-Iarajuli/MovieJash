@@ -30,11 +30,6 @@ class MainActivity_CreditCard : AppCompatActivity() {
 
         SecondBuyTicket.setOnClickListener {
 
-//            დიალოგის მერე უნდა დაიწყოს ეს ექთივითი
-
-//            startActivity(Intent(this, bottom_nav_second::class.java))
-//            finish()
-
             var cardnumber = CardNumber.text.toString()
             var month = Month.text.toString()
             var year = Year.text.toString()
