@@ -43,7 +43,7 @@ class MainActivity_CreditCard : AppCompatActivity() {
             if (cardnumber.isEmpty() || cardnumber.length != 16 || !cardnumber.matches(".*[0-9].*".toRegex())) {
                 CardNumber.error = "Enter Valid Card Number"
             }
-            else if (month.isEmpty() || !(month.toInt() <= 12 && month.toInt() == 0)) {
+            else if (month.isEmpty() || month.toInt() > 12 && month.toInt() == 0) {
                 Month.error = "Enter A Month"
             }
             else if (year.isEmpty() || !(year.toInt() >= 2020 && year.toInt() <= 2030)) {
