@@ -251,7 +251,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/dune"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cardo_bold"
@@ -259,7 +259,7 @@
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/gucci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cardo_bold"
@@ -267,7 +267,7 @@
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/noTimeToDie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cardo_bold"
@@ -275,7 +275,7 @@
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/spiderMan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cardo_bold"
@@ -283,7 +283,7 @@
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/kingsMan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cardo_bold"
