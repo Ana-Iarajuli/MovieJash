@@ -151,14 +151,16 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
 //            }
         }
         C2.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
+            var i = 0
+//            clickButton()
+            if (i == 0) {
+                onClicked()
+                i++
+            }else if (i == 1){
+                unClick()
+                i--
+            }
+            return@setOnClickListener
         }
         C3.setOnClickListener(){
             clickButton()
@@ -335,21 +337,21 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
     }
 
 
-//    private fun onClicked() {
-//            seatsNumber = seatsNumber - 1
-//            Seats.text = "$seatsNumber"
-//            priceNumber = priceNumber + 15
-//            Price.text = "$priceNumber"
-//
-//    }
-//
-//    private fun unClick() {
-//        seatsNumber = seatsNumber + 1
-//        Seats.text = "$seatsNumber"
-//        priceNumber = priceNumber - 15
-//        Price.text = "$priceNumber"
-//
-//    }
+    private fun onClicked() {
+            seatsNumber = seatsNumber - 1
+            Seats.text = "$seatsNumber"
+            priceNumber = priceNumber + 15
+            Price.text = "$priceNumber"
+
+    }
+
+    private fun unClick() {
+        seatsNumber = seatsNumber + 1
+        Seats.text = "$seatsNumber"
+        priceNumber = priceNumber - 15
+        Price.text = "$priceNumber"
+
+    }
 
     private fun clickButton() {
         if (i == 0) {
