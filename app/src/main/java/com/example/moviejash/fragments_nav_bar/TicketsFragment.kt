@@ -38,6 +38,8 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
     private var seatsNumber = 20
     private var priceNumber = 0
 
+    private var i = 0
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -45,15 +47,21 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         E1.setOnClickListener(){
             if (E1.isEnabled) {
                 onClicked()
+                i++
             }
-            else if (!(E1.isEnabled)) { unClick() }
+            else if (i == 1) {
+                unClick()
+                i == 0
+            }
         }
         E2.setOnClickListener(){
             if (E2.isEnabled) {
                 onClicked()
+                i++
             }
-            else {
+            else if (i == 1) {
                 unClick()
+                i == 0
             }
         }
         E3.setOnClickListener(){
@@ -227,6 +235,7 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
 
     }
 
+
     private fun onClicked() {
             seatsNumber = seatsNumber - 1
             Seats.text = "$seatsNumber"
@@ -241,28 +250,5 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         Price.text = "$priceNumber"
     }
 
-    fun disable() {
-        E1.isEnabled = false
-        E2.isEnabled = false
-        E3.isEnabled = false
-        E4.isEnabled = false
-        D1.isEnabled = false
-        D2.isEnabled = false
-        D3.isEnabled = false
-        D4.isEnabled = false
-        C1.isEnabled = false
-        C2.isEnabled = false
-        C3.isEnabled = false
-        C4.isEnabled = false
-        B1.isEnabled = false
-        B2.isEnabled = false
-        B3.isEnabled = false
-        B4.isEnabled = false
-        A1.isEnabled = false
-        A2.isEnabled = false
-        A3.isEnabled = false
-        A4.isEnabled = false
-
-    }
 
 }
