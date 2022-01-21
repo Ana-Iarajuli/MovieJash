@@ -66,169 +66,169 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
             }
         }
         E3.setOnClickListener(){
-            if (E3.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         E4.setOnClickListener(){
-            if (E4.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         D1.setOnClickListener(){
-            if (D1.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         D2.setOnClickListener(){
-            if (D2.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         D3.setOnClickListener(){
-            if (D3.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         D4.setOnClickListener(){
-            if (D4.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         C1.setOnClickListener(){
-            if (C1.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         C2.setOnClickListener(){
-            if (C2.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         C3.setOnClickListener(){
-            if (C3.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         C4.setOnClickListener(){
-            if (C4.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         B1.setOnClickListener(){
-            if (B1.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         B2.setOnClickListener(){
-            if (B2.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         B3.setOnClickListener(){
-            if (B3.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
             }
-            else {
+            else if (i == 1){
                 unClick()
                 i--
             }
         }
         B4.setOnClickListener(){
-            if (B4.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         A1.setOnClickListener(){
-            if (A1.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         A2.setOnClickListener(){
-            if (A2.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         A3.setOnClickListener(){
-            if (A3.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
         }
         A4.setOnClickListener(){
-            if (A4.isEnabled) {
+            if (i == 0) {
                 onClicked()
                 i++
-            }else {
+            }else if (i == 1){
                 unClick()
                 i--
             }
