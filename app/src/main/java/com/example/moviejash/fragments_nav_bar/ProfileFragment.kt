@@ -29,7 +29,6 @@ class ProfileFragment: Fragment (R.layout.fragment_profile){
     private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
 
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

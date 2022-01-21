@@ -10,23 +10,20 @@
         android:id="@+id/buyTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/custom_button"
-        android:text="Buy Ticket"
         android:fontFamily="@font/carter_one"
+        android:text="Buy Ticket"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        app:layout_constraintBottom_toTopOf="@+id/buyTicket"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
@@ -36,39 +33,36 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/e1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="E1"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"/>
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/e2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="E2"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button21"
+                android:id="@+id/e3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="E3"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/e4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="E4"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -76,40 +70,36 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/d1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="D1"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/d2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="D2"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/d3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="D3"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/d4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="D4"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -117,40 +107,36 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/c1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="C1"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="C2"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/c3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="C3"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/c4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="C4"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -158,40 +144,36 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/b1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="B1"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/b2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="B2"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/b3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="B3"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="B4"
-                android:textColor="@color/white"
                 android:background="@drawable/seat_button"
-                />
+                android:text="B4"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -199,40 +181,36 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="A1"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="A2"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/seat_button"
                 android:text="A3"
-                android:textColor="@color/white"
-                android:background="@drawable/seat_button"
-                />
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A4"
-                android:textColor="@color/white"
                 android:background="@drawable/seat_button"
-                />
+                android:text="A4"
+                android:textColor="@color/white" />
 
         </TableRow>
     </TableLayout>
@@ -268,7 +246,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13">
 
@@ -276,41 +254,41 @@
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dune"
             android:fontFamily="@font/cardo_bold"
-            android:textColor="@color/white"/>
+            android:text="Dune"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="House Of Gucci"
             android:fontFamily="@font/cardo_bold"
-            android:textColor="@color/white"/>
+            android:text="House Of Gucci"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No Time To Die"
             android:fontFamily="@font/cardo_bold"
-            android:textColor="@color/white"/>
+            android:text="No Time To Die"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spider-Man: No Way Home"
             android:fontFamily="@font/cardo_bold"
-            android:textColor="@color/white"/>
+            android:text="Spider-Man: No Way Home"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="The King's Man"
             android:fontFamily="@font/cardo_bold"
-            android:textColor="@color/white"/>
+            android:text="The King's Man"
+            android:textColor="@color/white" />
     </RadioGroup>
 
     <TextView
@@ -345,6 +323,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/seat_button_filled"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button23" />
 
@@ -353,21 +332,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:text="Seats:"
-        android:textSize="18sp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/carter_one"
+        android:text="Seats:"
         android:textColor="#f9d423"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/seatsNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/gentium_book_basic_italic"
         android:text="20"
         android:textColor="@color/white"
@@ -389,16 +367,15 @@
         android:textColor="#f9d423"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/seatsNumber" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/priceNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="0$"
         android:fontFamily="@font/gentium_book_basic_italic"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
