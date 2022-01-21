@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.moviejash.MainActivity
 import com.example.moviejash.PasswordReset
@@ -16,7 +17,6 @@ class ProfileFragment: Fragment (R.layout.fragment_profile){
     private lateinit var ResPasswordButton: Button
     private lateinit var LogoutButton: Button
     private lateinit var UserPhoto: ImageView
-
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
