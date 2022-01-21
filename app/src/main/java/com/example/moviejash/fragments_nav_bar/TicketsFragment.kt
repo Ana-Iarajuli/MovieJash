@@ -39,6 +39,8 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
     private lateinit var SpiderMan: RadioButton
     private lateinit var KingsMan: RadioButton
 
+    private lateinit var Movies: RadioGroup
+
     private lateinit var Seats: TextView
     private lateinit var Price: TextView
 
@@ -263,24 +265,30 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
 
 
         BuyTicket.setOnClickListener() {
-            if (!(Dune.isChecked)) {
-                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-            }
-            else if (!(HouseOfGucci.isChecked)) {
-                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-            }
-            else if (!(NoTimeToDie.isChecked)) {
-                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-            }
-            else if (!(SpiderMan.isChecked)) {
-                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-            }
-            else if (!(KingsMan.isChecked)) {
+            if (Movies.checkedRadioButtonId == -1) {
                 Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
             }
             else {
                 goToCreditCardActivity()
             }
+//            if (!(Dune.isChecked)) {
+//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+//            }
+//            else if (!(HouseOfGucci.isChecked)) {
+//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+//            }
+//            else if (!(NoTimeToDie.isChecked)) {
+//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+//            }
+//            else if (!(SpiderMan.isChecked)) {
+//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+//            }
+//            else if (!(KingsMan.isChecked)) {
+//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+//            }
+//            else {
+//                goToCreditCardActivity()
+//            }
         }
 
     }
@@ -321,6 +329,8 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         NoTimeToDie = requireView().findViewById(R.id.noTimeToDie)
         SpiderMan = requireView().findViewById(R.id.spiderMan)
         KingsMan = requireView().findViewById(R.id.kingsMan)
+
+        Movies = requireView().findViewById(R.id.radioGroup)
 
     }
 
