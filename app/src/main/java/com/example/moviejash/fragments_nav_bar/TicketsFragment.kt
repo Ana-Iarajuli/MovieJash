@@ -48,22 +48,22 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         E1.setOnClickListener(){
             if (i == 0) {
                 onClicked()
-                i == 1
+                i ++
             }
             else if (i == 1) {
                 unClick()
-                i == 0
+                i --
             }
         }
         E2.setOnClickListener(){
             if (i == 0) {
                 onClicked()
-                i == 1
+                i ++
 //                E2.setBackgroundColor(Color.YELLOW)
             }
             else if (i == 1) {
                 unClick()
-                i == 0
+                i --
 //                E2.setBackgroundColor(Color.TRANSPARENT)
             }
         }
