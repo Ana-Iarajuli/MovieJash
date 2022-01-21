@@ -33,11 +33,12 @@
         <entry key="app/src/main/res/drawable/ic_baseline_theaters_24.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/item_movie.xml" value="0.19722222222222222" />
         <entry key="app/src/main/res/drawable/star_color.xml" value="0.209375" />
-        <entry key="app/src/main/res/layout/activity_bottom_nav_second.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_bottom_nav_second.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main_credit_card.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_movies.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_start.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_tickets.xml" value="0.25" />
