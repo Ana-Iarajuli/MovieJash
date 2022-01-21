@@ -4,8 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.moviejash.MainActivity_CreditCard
 import com.example.moviejash.R
@@ -33,6 +32,13 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
     private lateinit var A2: Button
     private lateinit var A3: Button
     private lateinit var A4: Button
+
+    private lateinit var Dune: RadioButton
+    private lateinit var HouseOfGucci: RadioButton
+    private lateinit var NoTimeToDie: RadioButton
+    private lateinit var SpiderMan: RadioButton
+    private lateinit var KingsMan: RadioButton
+
     private lateinit var Seats: TextView
     private lateinit var Price: TextView
 
@@ -45,197 +51,237 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         super.onViewCreated(view, savedInstanceState)
 
         init()
+
         E1.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1) {
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1) {
+//                unClick()
+//                i--
+//            }
         }
         E2.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1) {
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1) {
+//                unClick()
+//                i--
+//            }
         }
         E3.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         E4.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         D1.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         D2.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         D3.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         D4.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         C1.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         C2.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         C3.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         C4.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         B1.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         B2.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         B3.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }
-            else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }
+//            else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         B4.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         A1.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         A2.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         A3.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
         A4.setOnClickListener(){
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
+            clickButton()
+//            if (i == 0) {
+//                onClicked()
+//                i++
+//            }else if (i == 1){
+//                unClick()
+//                i--
+//            }
         }
 
 
-        BuyTicket.setOnClickListener() { goToCreditCardActivity() }
+        BuyTicket.setOnClickListener() {
+            if (!(Dune.isChecked)) {
+                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else if (!(HouseOfGucci.isChecked)) {
+                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else if (!(NoTimeToDie.isChecked)) {
+                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else if (!(SpiderMan.isChecked)) {
+                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else if (!(KingsMan.isChecked)) {
+                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                goToCreditCardActivity()
+            }
+        }
 
     }
 
@@ -270,24 +316,48 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         Seats = requireView().findViewById(R.id.seatsNumber)
         Price = requireView().findViewById(R.id.priceNumber)
 
+        Dune = requireView().findViewById(R.id.dune)
+        HouseOfGucci = requireView().findViewById(R.id.gucci)
+        NoTimeToDie = requireView().findViewById(R.id.noTimeToDie)
+        SpiderMan = requireView().findViewById(R.id.spiderMan)
+        KingsMan = requireView().findViewById(R.id.kingsMan)
+
     }
 
 
-    private fun onClicked() {
+//    private fun onClicked() {
+//            seatsNumber = seatsNumber - 1
+//            Seats.text = "$seatsNumber"
+//            priceNumber = priceNumber + 15
+//            Price.text = "$priceNumber"
+//
+//    }
+//
+//    private fun unClick() {
+//        seatsNumber = seatsNumber + 1
+//        Seats.text = "$seatsNumber"
+//        priceNumber = priceNumber - 15
+//        Price.text = "$priceNumber"
+//
+//    }
+
+    private fun clickButton() {
+        if (i == 0) {
             seatsNumber = seatsNumber - 1
             Seats.text = "$seatsNumber"
             priceNumber = priceNumber + 15
             Price.text = "$priceNumber"
 
+            i++
+        }
+        else if (i == 1) {
+            seatsNumber = seatsNumber + 1
+            Seats.text = "$seatsNumber"
+            priceNumber = priceNumber - 15
+            Price.text = "$priceNumber"
+
+            i--
+        }
     }
-
-    private fun unClick() {
-        seatsNumber = seatsNumber + 1
-        Seats.text = "$seatsNumber"
-        priceNumber = priceNumber - 15
-        Price.text = "$priceNumber"
-
-    }
-
 
 }
