@@ -1,6 +1,7 @@
 package com.example.moviejash.fragments_nav_bar
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -45,23 +46,23 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
 
         init()
         E1.setOnClickListener(){
-            if (E1.isEnabled) {
+            if (i == 0) {
                 onClicked()
-                i++
             }
             else if (i == 1) {
                 unClick()
-                i == 0
             }
         }
         E2.setOnClickListener(){
-            if (E2.isEnabled) {
+            if (i == 0) {
                 onClicked()
-                i++
+//                i++
+//                E2.setBackgroundColor(Color.YELLOW)
             }
             else if (i == 1) {
                 unClick()
-                i == 0
+//                i--
+//                E2.setBackgroundColor(Color.TRANSPARENT)
             }
         }
         E3.setOnClickListener(){
@@ -241,6 +242,8 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
             Seats.text = "$seatsNumber"
             priceNumber = priceNumber + 15
             Price.text = "$priceNumber"
+            i++
+            E2.setBackgroundColor(Color.YELLOW)
     }
 
     private fun unClick() {
@@ -248,6 +251,8 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         Seats.text = "$seatsNumber"
         priceNumber = priceNumber - 15
         Price.text = "$priceNumber"
+        i == 0
+        E2.setBackgroundColor(Color.TRANSPARENT)
     }
 
 
