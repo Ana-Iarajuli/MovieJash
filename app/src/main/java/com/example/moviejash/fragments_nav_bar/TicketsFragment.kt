@@ -48,20 +48,22 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         E1.setOnClickListener(){
             if (i == 0) {
                 onClicked()
+                i == 1
             }
             else if (i == 1) {
                 unClick()
+                i == 0
             }
         }
         E2.setOnClickListener(){
             if (i == 0) {
                 onClicked()
-//                i++
+                i == 1
 //                E2.setBackgroundColor(Color.YELLOW)
             }
             else if (i == 1) {
                 unClick()
-//                i--
+                i == 0
 //                E2.setBackgroundColor(Color.TRANSPARENT)
             }
         }
@@ -242,8 +244,7 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
             Seats.text = "$seatsNumber"
             priceNumber = priceNumber + 15
             Price.text = "$priceNumber"
-            i++
-            E2.setBackgroundColor(Color.YELLOW)
+
     }
 
     private fun unClick() {
@@ -251,8 +252,7 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         Seats.text = "$seatsNumber"
         priceNumber = priceNumber - 15
         Price.text = "$priceNumber"
-        i == 0
-        E2.setBackgroundColor(Color.TRANSPARENT)
+
     }
 
 
