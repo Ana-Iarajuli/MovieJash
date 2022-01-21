@@ -28,22 +28,18 @@ class MainActivity_CreditCard : AppCompatActivity() {
 
         init()
 
-        SecondBuyTicket.setOnClickListener() {
+        SecondBuyTicket.setOnClickListener {
 
-//            დიალოგის მერე უნდა დაიწყოს ეს ექთივითი
-
-//            startActivity(Intent(this, bottom_nav_second::class.java))
-//            finish()
 
             var cardnumber = CardNumber.text.toString()
             var month = Month.text.toString()
             var year = Year.text.toString()
             var cvv = Cvv.text.toString()
 
-            if (cardnumber.isEmpty() || cardnumber.length != 16 || cardnumber.matches(".*[0-9].*".toRegex())) {
+            if (cardnumber.isEmpty() || cardnumber.length != 16 || !(cardnumber.matches(".*[0-9].*".toRegex()))) {
                 CardNumber.error = "Enter Valid Card Number"
             }
-            else if (month.isEmpty() || !(month.toInt() <= 12 && month.toInt() == 0)) {
+            else if (month.isEmpty() || (month.toInt() > 12 && month.toInt() == 0)) {
                 Month.error = "Enter A Month"
             }
             else if (year.isEmpty() || !(year.toInt() >= 2020 && year.toInt() <= 2030)) {
@@ -52,23 +48,26 @@ class MainActivity_CreditCard : AppCompatActivity() {
             else if (cvv.isEmpty() || cvv.length != 3) {
                 Cvv.error = "CVV Must Contain 3 numbers"
             }
-            else AlertDialog.Builder(this).setTitle("Confirm Purchase")
-                .setMessage("Are You Sure You Want To Buy this Ticket?")
-                .setPositiveButton("Yes") { dialog, i ->
+            else {
+                AlertDialog.Builder(this).setTitle("Confirm Purchase")
+                    .setMessage("Are You Sure You Want To Buy this Ticket?")
+                    .setPositiveButton("Yes") { dialog, i ->
 
-                    dialog.dismiss()
-                    goToMovies()
-                }
-                .setNegativeButton("No") { dialog, i ->
+                        dialog.dismiss()
+                        goToMovies()
+                    }
+                    .setNegativeButton("No") { dialog, i ->
 
-                    dialog.dismiss()
-                    goToMovies()
-                }
-                .setNeutralButton("Cancel") {dialog, i ->
+                        dialog.dismiss()
+                        goToMovies()
+                    }
+                    .setNeutralButton("Cancel") {dialog, i ->
 
-                    dialog.dismiss()
-                    goToMovies()
-                }
+                        dialog.dismiss()
+                        goToMovies()
+                    }
+                    .show()
+            }
 
         }
     }

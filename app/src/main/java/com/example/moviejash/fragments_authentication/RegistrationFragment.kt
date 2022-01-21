@@ -44,7 +44,7 @@ class RegistrationFragment: Fragment (R.layout.fragment_registration) {
 
         RegistrationButton.setOnClickListener() {
 
-            var username = Username.text.toString()
+            val username = Username.text.toString()
             var email = Email.text.toString()
             var password = Password.text.toString()
             var repeat_password = RepeatPassword.text.toString()
