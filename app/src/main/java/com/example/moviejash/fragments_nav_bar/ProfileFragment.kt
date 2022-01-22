@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.moviejash.MainActivity
 import com.example.moviejash.PasswordReset
 import com.example.moviejash.R
@@ -50,6 +51,7 @@ class ProfileFragment: Fragment (R.layout.fragment_profile){
         db2.child(auth.currentUser?.uid!!).addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 val profilePicture = snapshot.getValue(ProfilePicture:: class.java) ?: return
+                Glide.with(this@ProfileFragment).load(profilePicture.profilePicture).placeholder(R.drawable.ic_launcher_foreground).into(UserPhoto)
 
 
             }

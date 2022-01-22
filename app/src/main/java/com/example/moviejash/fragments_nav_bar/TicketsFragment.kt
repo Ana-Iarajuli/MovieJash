@@ -47,250 +47,45 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
     private var seatsNumber = 20
     private var priceNumber = 0
 
-    private var i = 0
+    var i = 0
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         init()
 
-        E1.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1) {
-//                unClick()
-//                i--
-//            }
-        }
-        E2.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1) {
-//                unClick()
-//                i--
-//            }
-        }
-        E3.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        E4.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        D1.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        D2.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        D3.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        D4.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        C1.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        C2.setOnClickListener(){
-            var i = 0
-//            clickButton()
-            if (i == 0) {
-                onClicked()
-                i++
-            }else if (i == 1){
-                unClick()
-                i--
-            }
-            return@setOnClickListener
-        }
-        C3.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        C4.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        B1.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        B2.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        B3.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }
-//            else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        B4.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        A1.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        A2.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        A3.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
-        A4.setOnClickListener(){
-            clickButton()
-//            if (i == 0) {
-//                onClicked()
-//                i++
-//            }else if (i == 1){
-//                unClick()
-//                i--
-//            }
-        }
+        E1.setOnClickListener { clickButton() }
+        E2.setOnClickListener { clickButton() }
+        E3.setOnClickListener { clickButton() }
+        E4.setOnClickListener { clickButton() }
+        D1.setOnClickListener { clickButton() }
+        D2.setOnClickListener { clickButton() }
+        D3.setOnClickListener { clickButton() }
+        D4.setOnClickListener { clickButton() }
+        C1.setOnClickListener { clickButton() }
+        C2.setOnClickListener { clickButton() }
+        C3.setOnClickListener { clickButton() }
+        C4.setOnClickListener { clickButton() }
+        B1.setOnClickListener { clickButton() }
+        B2.setOnClickListener { clickButton() }
+        B3.setOnClickListener { clickButton() }
+        B4.setOnClickListener { clickButton() }
+        A1.setOnClickListener { clickButton() }
+        A2.setOnClickListener { clickButton() }
+        A3.setOnClickListener { clickButton() }
+        A4.setOnClickListener { clickButton() }
 
 
-        BuyTicket.setOnClickListener() {
+        BuyTicket.setOnClickListener {
             if (Movies.checkedRadioButtonId == -1) {
                 Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
+            }
+            else if (seatsNumber == 20) {
+                Toast.makeText(requireActivity(), "You have To Choose A Seat", Toast.LENGTH_SHORT).show()
             }
             else {
                 goToCreditCardActivity()
             }
-//            if (!(Dune.isChecked)) {
-//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-//            }
-//            else if (!(HouseOfGucci.isChecked)) {
-//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-//            }
-//            else if (!(NoTimeToDie.isChecked)) {
-//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-//            }
-//            else if (!(SpiderMan.isChecked)) {
-//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-//            }
-//            else if (!(KingsMan.isChecked)) {
-//                Toast.makeText(requireActivity(), "You Have To Choose A Movie", Toast.LENGTH_SHORT).show()
-//            }
-//            else {
-//                goToCreditCardActivity()
-//            }
         }
 
     }
@@ -333,23 +128,6 @@ class TicketsFragment: Fragment (R.layout.fragment_tickets){
         KingsMan = requireView().findViewById(R.id.kingsMan)
 
         Movies = requireView().findViewById(R.id.radioGroup)
-
-    }
-
-
-    private fun onClicked() {
-            seatsNumber = seatsNumber - 1
-            Seats.text = "$seatsNumber"
-            priceNumber = priceNumber + 15
-            Price.text = "$priceNumber"
-
-    }
-
-    private fun unClick() {
-        seatsNumber = seatsNumber + 1
-        Seats.text = "$seatsNumber"
-        priceNumber = priceNumber - 15
-        Price.text = "$priceNumber"
 
     }
 
